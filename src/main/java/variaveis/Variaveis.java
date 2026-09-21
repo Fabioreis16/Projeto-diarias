@@ -1,7 +1,7 @@
 package variaveis;
 
 public class Variaveis {
-    private String Descricao = "";
+    private String Descricao = " ";
     public void setDescricao(String descricao){
         this.Descricao=descricao;
     }
@@ -10,14 +10,16 @@ public class Variaveis {
     }
 
 
-    private Double Valor = 0.00;
-    public void setValor(Double valor){
+    private String Valor = " ";
+
+    public void setValor(String valor){
         this.Valor=valor;
     }
-    public Double getValor(){
+    public String getValor(){
         return Valor ;
     }
-    public void ClienteDados(String Descricao , Double Valor){
+
+    public void ClienteDados(String Descricao , String Valor){
         this.Descricao=Descricao;
         this.Valor=Valor;
     }
@@ -27,6 +29,7 @@ public class Variaveis {
     public void setTitulo(String titulo){
         this.Titulo=titulo;
     }
+
     public String getTitulo(){
         return Titulo ;
     }
